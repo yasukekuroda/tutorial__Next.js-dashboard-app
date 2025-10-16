@@ -9,9 +9,6 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
     fetchInvoiceById(id),
     fetchCustomers(),
   ]);
-  console.log("🚀 ~ Edit > Page ~ id:", id);
-  console.log("🚀 ~ Page ~ invoice:", invoice);
-  console.log("🚀 ~ Page ~ customers:", customers);
 
   return (
     <main>
